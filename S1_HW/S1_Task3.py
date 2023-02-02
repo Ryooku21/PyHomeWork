@@ -9,7 +9,7 @@
 # 123456 -> no
 
 
-lucky_ticket = int(input('Введите номер билета:'))
+lucky_ticket = int(input('Введите номер билета: '))
 if lucky_ticket > 999999 or lucky_ticket < 100000:
     print('Номер билета должен состоять из 6 цифр')
     exit()
