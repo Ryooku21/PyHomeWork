@@ -6,6 +6,7 @@
 
 number = int(input("Введите трехзначное число:"))
 result = int()
+
 if number < 100 or number > 999:
     print('Число должно быть трехзначным!')
 else:
