@@ -10,6 +10,10 @@ ch_length = int(input('Введите длину шоколадки: '))
 pieces = int(input('Введите количество кусочков, которые нужно отломить: '))
 chocolate = ch_width * ch_length
 
+if ch_width <= 0 or ch_length <= 0 or pieces <=0:
+    print('Нечего ломать, введите положительное число отличное от нуля')
+    exit()
+
 if (chocolate - pieces) % ch_length !=0 \
 and (chocolate - pieces) % ch_width !=0:
     print('Один раз разломить не получится')
