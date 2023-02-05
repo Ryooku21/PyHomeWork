@@ -9,7 +9,7 @@
 # 60 -> 10  40  10
 
 
-cranes_total = int(input('Введите количество журавликов:'))
+cranes_total = int(input('Введите количество журавликов: '))
 kate = cranes_total / 3 * 2
 the_boys = int()
 

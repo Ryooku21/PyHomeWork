@@ -4,7 +4,7 @@
 # 100 -> 1 (1 + 0 + 0)
 
 
-number = int(input("Введите трехзначное число:"))
+number = int(input("Введите трехзначное число: "))
 result = int()
 
 if number < 100 or number > 999:
