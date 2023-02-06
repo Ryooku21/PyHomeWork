@@ -32,7 +32,7 @@ if summ % 2 != 0:                              # Ищем дискриминан
 else:
     discriminant = (summ / 2) ** 2 - multiply
 
-if (summ <= 3) and (multiply <= 3):                 # Проверяем если одно из введенных чисел равно 0
+if (summ <= 3) and (multiply <= 3):                 # Проверяем если введенные числа меньше 4
     print('Задача не имеет решения')
     exit(0)
 elif (discriminant > 0) or (summ % 2 == 0):        # Уравнение для нечетного второго коэффициента
