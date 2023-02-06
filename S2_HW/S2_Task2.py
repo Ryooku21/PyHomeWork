@@ -41,7 +41,7 @@ elif (discriminant > 0) or (summ % 2 == 0):        # Уравнение для �
 elif (discriminant > 0) and (summ % 2 != 0):       # Уравнение для четного второго коэффициента
     first_number = (summ + discriminant ** 0.5) / 2
     second_number = (summ - discriminant ** 0.5) / 2
-elif discriminant == 0:                        # Уравнение для дискиминанта равного 0
+elif discriminant == 0:                        # Уравнение для дискриминанта равного 0
     first_number = summ / 2
     second_number = summ / 2
 elif discriminant < 0:                         # Если дискриминант меньше 0, то уравнение не имеет корней
