@@ -48,10 +48,3 @@ else:
             numbers_diff = abs(my_list[k] - number_to_find)
             count_number_to_find = my_list[k]
     print(f'Искомое число не найдено, максимально близкое ему по значению {count_number_to_find}')
-
-
-
-
-
-
-
