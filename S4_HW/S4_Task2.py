@@ -45,4 +45,4 @@ for j in range(len(cultivation) - 1):
     elif cultivation[j-1] + cultivation[j] + cultivation[j + 1] > max_berries:
         max_berries = cultivation[j-1] + cultivation[j] + cultivation[j + 1]
 
-print(f'Максимальное количество ягод, которое можент собрать модуль: {max_berries}')
+print(f'Максимальное количество ягод, которое может собрать модуль: {max_berries}')
