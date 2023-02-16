@@ -24,11 +24,12 @@ while flag:
 
 
 def summ_numbers(num_a, num_b):
-    if (num_a == 1):
+    if num_a == 1:
         return num_b + 1
-    elif (num_b == 1):
+    elif num_b == 1:
         return num_a + 1
     else:
-        return (summ_numbers(num_a + 1, num_b - 1))
+        return summ_numbers(num_a + 1, num_b - 1)
+
 
 print(f'Сумма введенных чисел {my_number_one} и {my_number_two} равна: {summ_numbers(my_number_one, my_number_two)}')
