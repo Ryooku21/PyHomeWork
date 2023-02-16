@@ -24,9 +24,10 @@ while flag:
 
 
 def recursion_degree(num, degree):
-    if (degree == 1):
+    if degree == 1:
         return num
     else:
-        return (num * recursion_degree(num, degree - 1))
+        return num * recursion_degree(num, degree - 1)
+
 
 print(f'Число {my_number} в степени {my_num_degree} равно: {recursion_degree(my_number, my_num_degree)}')
