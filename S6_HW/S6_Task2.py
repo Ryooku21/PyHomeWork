@@ -30,6 +30,7 @@ my_list_indexes = []
 for i in range(10):
     my_list.append(randint(0, 10))
 
+print('Задан список:')
 print(my_list)
 
 for i in range(len(my_list)):
