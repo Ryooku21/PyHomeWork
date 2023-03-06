@@ -46,7 +46,7 @@ class PhoneBook:
 
     def delete(self, i: int):
         contact = self.phone_book.pop(i)
-        print(f'Контакт {contact.get("name")} успешно удален!')
+        print(f'Контакт {contact.get("name")} успешно удален.')
 
 
 

@@ -19,7 +19,7 @@ def start():
                 new_entry = view.new_contact()
                 pb.new_contact(new_entry)
             case 5:
-                word = view.input_request('По какому слову будем искать?: ')
+                word = view.input_request('По какому параметру будем искать?: ')
                 result = pb.search(word)
                 view.show_contacts(result)
             case 6:

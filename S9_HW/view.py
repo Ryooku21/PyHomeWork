@@ -18,10 +18,10 @@ def show_contacts(phone_book: list[dict]):
     print()
     if phone_book:
         for i, contact in enumerate(phone_book, 1):
-            print(f'{i}. {contact.get("name"):<10} '
-                  f'{contact.get("surname"):<10} '
-                  f'{contact.get("phone"):<10} '
-                  f'{contact.get("comment"):<10}')
+            print(f'{i}. {contact.get("name"):<12} '
+                  f'{contact.get("surname"):<12} '
+                  f'{contact.get("phone"):<12} '
+                  f'{contact.get("comment"):<12}')
         print()
     else:
         print('\nФайл телефонной книги не открыт или пуст\n')
