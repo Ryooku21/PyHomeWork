@@ -31,7 +31,15 @@ def new_contact() -> dict:
     print()
     name = input('Введите имя: ')
     surname = input('Введите фамилию: ')
-    phone = input('Введите номер телефона: ')
+    # phone = input('Введите номер телефона: ')
+    flag = True
+    while flag:
+        phone = input('Введите номер телефона в до 12 чисел: ')
+        if phone.isdigit() & len(phone) < 12:
+            phone = int(phone)
+            flag = False
+        else:
+            print('Введите корректный номер')
     comment = input('Введите комментарий: ')
     print()
     return {'name': name, 'surname': surname, 'phone': phone, 'comment': comment}

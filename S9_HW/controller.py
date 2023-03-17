@@ -4,7 +4,11 @@ import view
 pb = phone_book.PhoneBook()
 
 
-def start():
+def start() -> object:
+    """
+    Метод, который объединяет и запускает визуальную часть и основной функционал программы.
+    :rtype: object
+    """
     while True:
         choice = view.menu()
         match choice:
@@ -29,5 +33,12 @@ def start():
                 index = view.select_to_delete(pb.get())
                 pb.delete(index)
             case 8:
-                view.goodbye()
-                break
+                if pb.check_difference():
+                    view.goodbye()
+                    break
+                elif view.confirm_changes():
+                    pb.save_file()
+                    break
+                else:
+                    view.goodbye()
+                    break

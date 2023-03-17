@@ -3,6 +3,7 @@ class PhoneBook:
     def __init__(self, path: str = 'contacts.txt'):
         self.path = path
         self.phone_book = []
+        self.phone_book_origin = []
 
     def open_file(self):
         with open(self.path, 'r', encoding='utf-8') as file:
@@ -15,6 +16,7 @@ class PhoneBook:
             pb['phone'] = new[2]
             pb['comment'] = new[3]
             self.phone_book.append(pb)
+            self.phone_book_origin.append(pb)
         print()
         print('\nФайл с контактами успешно загружен\n')
 
@@ -47,6 +49,10 @@ class PhoneBook:
     def delete(self, i: int):
         contact = self.phone_book.pop(i)
         print(f'Контакт {contact.get("name")} успешно удален.')
+
+    def check_difference(self):
+        if self.phone_book == self.phone_book_origin:
+            return True
 
 
 
